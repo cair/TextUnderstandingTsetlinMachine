@@ -18,6 +18,7 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 
 ## Requirements
 - Python 2.7.x https://www.python.org/downloads/
+- Gcc http://gcc.gnu.org
 - Numpy http://www.numpy.org/
 - Cython http://cython.org/
 - CUDA https://developer.nvidia.com/cuda
@@ -25,7 +26,6 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 - Scikit-learn http://scikit-learn.org
 - Keras http://keras.io
 - TensorFlow http://www.tensorflow.org
-- Gcc http://gcc.gnu.org
 
 ## Basic instructions for use
 1. Edit the GPUConfig.cuh file (adjust the GRID_SIZE and BLOCK_SIZE parameters for optimal performance of your Nvidia card).
