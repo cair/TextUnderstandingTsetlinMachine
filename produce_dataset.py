@@ -3,18 +3,13 @@
 
 import numpy as np
 import re
-import MultiClassTsetlinMachineOptimized
-import MultiClassTsetlinMachineSparse
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.naive_bayes import BernoulliNB, MultinomialNB
+import keras
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.svm import LinearSVC
-from pymongo import MongoClient
 from sklearn.feature_selection import mutual_info_classif
-
-import keras
+from keras.datasets import imdb
+from sklearn.datasets import fetch_20newsgroups
 
 MAX_NGRAM = 2
 
