@@ -10,9 +10,9 @@ In all brevity, the Tsetlin Machine represents the terms of a text as propositio
 
 ![Figure 4](https://raw.githubusercontent.com/bluebyte9001/TextUnderstandingTsetlinMachine/master/Figure4.png)
 
-The combination of its computational simplicity, accuracy, and finally results that are highly interpretable, leaves the Tsetlin Machine worthy of further exploration in many text analysis directions.  
+The combination of computational simplicity, accuracy, and results that are highly interpretable, leaves the Tsetlin Machine worthy of further exploration in many text analysis directions.  
 
-We refer to the original [seed paper](https://arxiv.org/pdf/1804.01508.pdf) on the Tsetlin Machine, and our [specific paper](https://arxiv.org/pdf/xxxx.pdf) on using the Tsetlin Machine for text categorization, for details on how the method works.
+For a general introduction to the Tsetlin Machine, we refer the reader to the original paper (https://arxiv.org/pdf/1804.01508.pdf). For the details on the text analysis approach, see https://arxiv.org/abs/1809.04547, 
 
 Also notice that research on the Tsetlin Machine for text understanding is an on-going project at [the Centre for Artificial Intelligence Research CAIR](https://cair.uia.no/) at the University of Agder, Norway. More information will be added as the project advances.
 
