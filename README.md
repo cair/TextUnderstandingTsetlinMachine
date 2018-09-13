@@ -38,11 +38,12 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 
 ## Instructions for use
 
-1. Use the following command to compile the necessary C++ CUDA runtime file:
+1. Edit the GPUConfig.cuh file (adjust the GRID_SIZE and BLOCK_SIZE parameters for optimal performance of your Nvidia card).
+2. Use the following command to compile the necessary C++ CUDA runtime file:
 nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand -o TsetlinMachineIMDB.out
-2. Produce the IMDB dataset by running the command:
+3. Produce the IMDB dataset by running the command:
 python produce_dataset.py
-3. Run the TsetlinMachine for categorization of the IMDB dataset:
+4. Run the TsetlinMachine for categorization of the IMDB dataset:
 ./TsetlinMachineIMDB.out
 
 
