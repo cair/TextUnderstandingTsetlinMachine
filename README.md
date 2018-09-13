@@ -41,10 +41,10 @@ python produce_dataset.py
 ## Important meta-parameters used for tuning the Tsetlin Machine
 You may experiment with the Tsetlin Machine's hyperparameter settings by editing the TsetlinMachineConfig.cuh and the TsetlinMachineIMDB.cu files. Just remember to recompile after editing before you try a rerun!
 
-The most important parameters of the Tsetlin Machine that we adjust are features, clauses, classes, epochs, s, threshold T, and states. Features describes the number of features in the dataset, and must be correct for the adequate number of Tsetlin automata to be initialized by the Tsetlin Machine. 
-Clauses describes the number of clauses that the Tsetlin Machine will implement to solve the text learning problem, and roughly translates to the number of hidden nodes in a neural network layer. 
-Epochs is similar to epochs typically used for artificial neural network training, and describes the number of cycles the Tsetlin Machine runs on the training dataset. 
-T describes a value for the threshold function regulating how easily the available clauses are spent representing each specific sub-pattern, while s denotes precision and determines the granularity of the sub-patterns captured by the literals in the Tsetlin Machine. States describe the number of states for each Tsetlin automaton.
+The most important parameters of the Tsetlin Machine that we adjust are features, clauses, classes, epochs, s, threshold T, and states. **Features** describes the number of features in the dataset, and must be correct for the adequate number of Tsetlin automata to be initialized by the Tsetlin Machine. 
+**Clauses** describes the number of clauses that the Tsetlin Machine will implement to solve the text learning problem, and roughly translates to the number of hidden nodes in a neural network layer. 
+**Epochs** is similar to epochs typically used for artificial neural network training, and describes the number of cycles the Tsetlin Machine runs on the training dataset. 
+**T** describes a value for the threshold function regulating how easily the available clauses are spent representing each specific sub-pattern, while s denotes precision and determines the granularity of the sub-patterns captured by the literals in the Tsetlin Machine. **States** describe the number of states for each Tsetlin automaton.
 
 ## Citation
 Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machie in your work:
