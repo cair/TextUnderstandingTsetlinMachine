@@ -17,24 +17,15 @@ We refer to the original [seed paper](https://arxiv.org/pdf/1804.01508.pdf) on t
 Also notice that research on the Tsetlin Machine for text understanding is an on-going project at [the Centre for Artificial Intelligence Research CAIR](https://cair.uia.no/) at the University of Agder, Norway. More information will be added as the project advances.
 
 ## Requirements
-•	Python 2.7.x https://www.python.org/downloads/
-
-•	Numpy http://www.numpy.org/
-
-•	Cython http://cython.org/
-
-•	CUDA https://developer.nvidia.com/cuda
-
-•	NLTK http://www.nltk.org
-
-•	Scikit-learn http://scikit-learn.org
-
-•	Keras http://keras.io
-
-•	TensorFlow http://www.tensorflow.org
-
-•	Gcc http://gcc.gnu.org
-
+- Python 2.7.x https://www.python.org/downloads/
+- Numpy http://www.numpy.org/
+- Cython http://cython.org/
+- CUDA https://developer.nvidia.com/cuda
+- NLTK http://www.nltk.org
+- Scikit-learn http://scikit-learn.org
+- Keras http://keras.io
+- TensorFlow http://www.tensorflow.org
+- Gcc http://gcc.gnu.org
 
 ## Basic instructions for use
 1. Edit the GPUConfig.cuh file (adjust the GRID_SIZE and BLOCK_SIZE parameters for optimal performance of your Nvidia card).
