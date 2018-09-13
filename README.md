@@ -39,7 +39,7 @@ python produce_dataset.py
 5. The results for each epoch are calculated as true positive, true negative, false positive, false negative, accuracy, recall, and precision (produced on screen and also saved to the file statistics.txt).
 
 ## Important meta-parameters used for tuning the Tsetlin Machine
-You may experiment with the Tsetlin Machine's hyperparameter settings by editing the TsetlinMachineConfig.cuh and the TsetlinMachineIMDB.cu files. Just remember to recompile after editing before you  try a rerun!
+You may experiment with the Tsetlin Machine's hyperparameter settings by editing the TsetlinMachineConfig.cuh and the TsetlinMachineIMDB.cu files. Just remember to recompile after editing before you try a rerun!
 
 The most important parameters of the Tsetlin Machine that we adjust are features, clauses, classes, epochs, s, threshold T, and states. Features describes the number of features in the dataset, and must be correct for the adequate number of Tsetlin automata to be initialized by the Tsetlin Machine. 
 Clauses describes the number of clauses that the Tsetlin Machine will implement to solve the text learning problem, and roughly translates to the number of hidden nodes in a neural network layer. 
