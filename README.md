@@ -34,7 +34,7 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 
 ## Instructions for use
 
-For compiling the necessary files, use:
+For compiling the necessary files, use the following command:
 nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand
 
 ## Citation
