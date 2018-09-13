@@ -8,7 +8,7 @@ The Tsetlin automaton developed by M.L. Tsetlin in the Soviet Union in the late 
 
 In all brevity, the Tsetlin Machine represents the terms of a text as propositional variables. From these, categories are captured using simple propositional formulae, such as:  if “rash” and “reaction” and “penicillin” then Allergy. The Tsetlin Machine learns these formulae from a labelled text, utilizing conjunctive clauses to represent the particular facets of each category.  Indeed, even the absence of terms (negated features) can be used for categorization purposes. The figure below is from our [text categorization paper](https://arxiv.org/xxxx.pdf) and captures the essence of this process (the paper explains the details of the figure). It reflects a running example from the medical domain, where we use the Tsetlin Machine to detect patient allergies in Electronic Health Records. 
 
-![alt text](https://raw.githubusercontent.com/bluebyte9001/TextUnderstandingTsetlinMachine/master/Figure4.tif)
+![alt text](https://github.com/cair/TextUnderstandingTsetlinMachine/blob/master/Figure4.tif)
 
 The combination of its computational simplicity, accuracy, and finally results that are highly interpretable, leaves the Tsetlin Machine worthy of further exploration in many text analysis directions.  
 
