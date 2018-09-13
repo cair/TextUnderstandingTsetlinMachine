@@ -1,5 +1,5 @@
 # Text Understanding with the Tsetlin Machine
-This project contains the source code for our text categorization approach based on the recently introduced [Tsetlin Machine](https://arxiv.org/pdf/1804.01508.pdf). We have included the CUDA implementation, and will later also include the C source code. This is the code that we used to produce the empirical results in our paper on "Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications" (https://arxiv.org/abs/1809.04547). We have also included a script that preprocesses the IMDB Movie Reviews dataset for analysis by the Tsetlin Machine.
+This project contains the source code for our text categorization approach based on the recently introduced [Tsetlin Machine](https://arxiv.org/pdf/1804.01508.pdf). We have included the CUDA implementation, and will later also include the C source code. This is the code that we used to produce the empirical results in our paper on "Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications" (https://arxiv.org/abs/1809.04547). We have also included a script that preprocesses the IMDB Movie Review dataset for analysis by the Tsetlin Machine.
 
 ## Background
 Although deep learning in the form of convolutional neural networks (CNN), recurrent neural networks (RNNs), and Long Short Term Memory (LSTM) recently has provided a leap ahead in text categorization accuracy, this leap has come at the expense of interpretability and computational complexity. 
@@ -36,16 +36,24 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 •	Gcc http://gcc.gnu.org
 
 
-## Instructions for use
-
+## Basic instructions for use
 1. Edit the GPUConfig.cuh file (adjust the GRID_SIZE and BLOCK_SIZE parameters for optimal performance of your Nvidia card).
-2. Use the following command to compile the necessary C++ CUDA runtime file:
+2. Use the following command to compile the necessary C++ CUDA executable:
 nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand -o TsetlinMachineIMDB.out
+(don't worry about the compiler warnings produced)
 3. Produce the IMDB dataset by running the command:
 python produce_dataset.py
-4. Run the TsetlinMachine for categorization of the IMDB dataset:
+4. Run the TsetlinMachine executable produced in step 2 to start categorization of the IMDB dataset:
 ./TsetlinMachineIMDB.out
+5. The results for each epoch are calculated as true positive, true negative, false positive, false negative, accuracy, recall, and precision. The results are produced on screen and is also saved to the file statistics.txt.
 
+## Important meta-parameters used for tuning the Tsetlin Machine for text classification
+You may experiment with the Tsetlin Machine's hyperparameter settings by editing the TsetlinMachineConfig.cuh and the TsetlinMachineIMDB.cu files. Just remember to recompile after editing before you  try a rerun!
+
+The most important parameters of the Tsetlin Machine that we adjust are features, clauses, classes, epochs, s, threshold T, and states. Features describes the number of features in the dataset, and must be correct for the adequate number of Tsetlin automata to be initialized by the Tsetlin Machine. 
+Clauses describes the number of clauses that the Tsetlin Machine will implement to solve the text learning problem, and roughly translates to the number of hidden nodes in a neural network layer. 
+Epochs is similar to epochs typically used for artificial neural network training, and describes the number of cycles the Tsetlin Machine runs on the training dataset. 
+T describes a value for the threshold function regulating how easily the available clauses are spent representing each specific sub-pattern, while s denotes precision and determines the granularity of the sub-patterns captured by the literals in the Tsetlin Machine. States describe the number of states for each Tsetlin automaton.
 
 ## Citation
 Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machie in your work:
