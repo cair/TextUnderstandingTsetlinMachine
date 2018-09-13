@@ -20,7 +20,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-This code implements a multiclass version of the Tsetlin Machine from paper arXiv:1804.01508
+This code implements the Tsetlin Machine from paper arXiv:1804.01508
 https://arxiv.org/abs/1804.01508
 
 */
