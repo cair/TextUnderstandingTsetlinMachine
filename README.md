@@ -29,13 +29,22 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 
 •	Scikit-learn http://scikit-learn.org
 
+•	Keras http://keras.io
+
+•	TensorFlow http://www.tensorflow.org
+
 •	Gcc http://gcc.gnu.org
 
 
 ## Instructions for use
 
-For compiling the necessary files, use the following command:
-nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand
+1. Use the following command to compile the necessary C++ CUDA runtime file:
+nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand -o TsetlinMachineIMDB.out
+2. Produce the IMDB dataset by running the command:
+python produce_dataset.py
+3. Run the TsetlinMachine for categorization of the IMDB dataset:
+./TsetlinMachineIMDB.out
+
 
 ## Citation
 Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machie in your work:
