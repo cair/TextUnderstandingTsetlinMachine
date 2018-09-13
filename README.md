@@ -45,7 +45,7 @@ nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcura
 python produce_dataset.py
 4. Run the TsetlinMachine executable produced in step 2 to start categorization of the IMDB dataset:
 ./TsetlinMachineIMDB.out
-5. The results for each epoch are calculated as true positive, true negative, false positive, false negative, accuracy, recall, and precision. The results are produced on screen and is also saved to the file statistics.txt.
+5. The results for each epoch are calculated as true positive, true negative, false positive, false negative, accuracy, recall, and precision (produced on screen and also saved to the file statistics.txt).
 
 ## Important meta-parameters used for tuning the Tsetlin Machine for text classification
 You may experiment with the Tsetlin Machine's hyperparameter settings by editing the TsetlinMachineConfig.cuh and the TsetlinMachineIMDB.cu files. Just remember to recompile after editing before you  try a rerun!
