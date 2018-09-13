@@ -1,5 +1,5 @@
 # Text Understanding with the Tsetlin Machine
-This project contains the source code for our novel text categorization approach that leverages the recently introduced [Tsetlin Machine](https://arxiv.org/pdf/1804.01508.pdf). We have included the CUDA implementation, and will later also include the C source code. This is the code that we used for our experiments in [specific paper](https://arxiv.org/pdf/xxxx.pdf) on using the Tsetlin Machine for Text Categorization. Links to the publicly available datasets used in the paper are provided in the code.
+This project contains the source code for our text categorization approach based on the recently introduced [Tsetlin Machine](https://arxiv.org/pdf/1804.01508.pdf). We have included the CUDA implementation, and will later also include the C source code. This is the code that we used for our experiments in [specific paper](https://arxiv.org/pdf/xxxx.pdf) on using the Tsetlin Machine for Text Categorization. Links to the publicly available datasets used in the paper are provided in the code.
 
 ## Background
 Although deep learning in the form of convolutional neural networks (CNN), recurrent neural networks (RNNs), and Long Short Term Memory (LSTM) recently has provided a leap ahead in text categorization accuracy, this leap has come at the expense of interpretability and computational complexity. 
