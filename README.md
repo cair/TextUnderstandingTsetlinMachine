@@ -27,7 +27,7 @@ Also notice that research on the Tsetlin Machine for text understanding is an on
 - Keras http://keras.io
 - TensorFlow http://www.tensorflow.org
 
-## Basic instructions for use
+## Instructions for use
 1. Edit the GPUConfig.cuh file (adjust the GRID_SIZE and BLOCK_SIZE parameters for optimal performance of your Nvidia card).
 2. Use the following command to compile the necessary C++ CUDA executable:
 nvcc -O3 TsetlinMachineIMDB.cu TsetlinMachine.cu TsetlinMachineKernels.cu -lcurand -o TsetlinMachineIMDB.out
