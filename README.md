@@ -54,7 +54,12 @@ title={The Tsetlin Machine-A Game Theoretic Bandit Driven Approach to Optimal Pa
 author={Granmo, Ole-Christoffer}, 
 journal={arXiv preprint arXiv:1804.01508}, year={2018} 
 
-{Reference to the second paper on using the Tsetlin Machine for Text Categorization is temporarily unavailable until published]. 
+@article{berge2018using,
+  title={Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications},
+  author={Berge, Geir Thore and Granmo, Ole-Christoffer and Tveit, Tor Oddbj{\o}rn and Goodwin, Morten and Jiao, Lei and Matheussen,  
+  Bernt Viggo},
+  journal={arXiv preprint arXiv:1809.04547}, year={2018}
+}
 
 ## Licence
 Copyright (c) 2018 Geir Thore Berge and Ole-Christoffer Granmo
