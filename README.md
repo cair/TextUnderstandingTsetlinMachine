@@ -46,6 +46,11 @@ The most important parameters of the Tsetlin Machine that we adjust are features
 **Epochs** is similar to epochs typically used for artificial neural network training, and describes the number of cycles the Tsetlin Machine runs on the training dataset. 
 **T** describes a value for the threshold function regulating how easily the available clauses are spent representing each specific sub-pattern, while s denotes precision and determines the granularity of the sub-patterns captured by the literals in the Tsetlin Machine. **States** describe the number of states for each Tsetlin automaton.
 
+## Further Work
+
+* Implement fast bit-manipulation approach from (https://github.com/cair/fast-tsetlin-machine-with-mnist-demo).
+* Optimize code base further.
+
 ## Citation
 Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machie in your work:
 
