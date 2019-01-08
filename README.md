@@ -66,7 +66,7 @@ journal={arXiv preprint arXiv:1804.01508}, year={2018}
 }
 
 ## Licence
-Copyright (c) 2018 Geir Thore Berge and Ole-Christoffer Granmo
+Copyright (c) 2019 Geir Thore Berge and Ole-Christoffer Granmo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
