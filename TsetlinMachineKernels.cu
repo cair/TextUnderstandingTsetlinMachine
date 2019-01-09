@@ -106,7 +106,7 @@ __global__ void type_ii_feedback(int *ta_state, int *clause_feedback, int *claus
   }
 }
 
-/* Sum up the votes for each class (this is the multiclass version of the Tsetlin Machine) */
+/* Sum up the votes for each class */
 __global__ void sum_up_class_votes(int *clause_output, int *sum)
 {
   int index = blockIdx.x * blockDim.x + threadIdx.x;
@@ -122,7 +122,6 @@ __global__ void sum_up_class_votes(int *clause_output, int *sum)
   atomicAdd(sum, local_sum);
 }
 
-/* Sum up the votes for each class (this is the multiclass version of the Tsetlin Machine) */
 __global__ void generate_clause_feedback(curandState *state, int *clause_feedback, int *class_sum, int target)
 {
   int index = blockIdx.x * blockDim.x + threadIdx.x;
