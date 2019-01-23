@@ -1,4 +1,4 @@
-# Text Understanding with the Tsetlin Machine
+# Text Understanding With the Tsetlin Machine
 This project contains the source code for a text categorization approach based on the recently introduced [Tsetlin Machine](https://arxiv.org/pdf/1804.01508.pdf). We have included the CUDA implementation, and will later also include the C source code. This is the code that we used to produce the empirical results in the paper "Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications" (https://arxiv.org/abs/1809.04547). We have also included a script that preprocesses the IMDB Movie Review dataset for analysis by the Tsetlin Machine.
 
 ## Background
