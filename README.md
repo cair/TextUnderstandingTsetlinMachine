@@ -53,7 +53,7 @@ The most important parameters of the Tsetlin Machine that we adjust are features
 * Develop a convolutional version of the Tsetlin Machine to further increase accuracy performance.
 
 ## Citation
-Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machine in your work:
+Please cite the relevant Tsetlin Machine papers if you use the Tsetlin Machine in your work:
 
 ```bash
 @article{berge2019, 
