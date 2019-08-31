@@ -55,16 +55,27 @@ The most important parameters of the Tsetlin Machine that we adjust are features
 ## Citation
 Please cite the relevant Tsetlin Machine arXiv papers if you use the Tsetlin Machine in your work:
 
-@article{granmo2018tsetlin, 
-title={The Tsetlin Machine-A Game Theoretic Bandit Driven Approach to Optimal Pattern Recognition with Propositional Logic}, 
-author={Granmo, Ole-Christoffer}, 
-journal={arXiv preprint arXiv:1804.01508}, year={2018} 
-
-@article{berge2018using,
+```bash
+@article{berge2019, 
+  author={Geir Thore {Berge} and Ole-Christoffer {Granmo} and Tor Oddbjørn {Tveit} and Morten {Goodwin} and Lei {Jiao} and Bernt Viggo {Matheussen}}, 
+  journal={IEEE Access}, 
   title={Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications},
-  author={Berge, Geir Thore and Granmo, Ole-Christoffer and Tveit, Tor Oddbjorn and Goodwin, Morten and Jiao, Lei and Matheussen, Bernt Viggo},
-  journal={arXiv preprint arXiv:1809.04547}, year={2018}
+  volume={7},
+  pages={115134-115146}, 
+  year={2019}, 
+  doi={10.1109/ACCESS.2019.2935416}, 
+  ISSN={2169-3536}
 }
+```
+
+```bash
+@article{granmo2018tsetlin,
+  author = {{Granmo}, Ole-Christoffer},
+  title = "{The Tsetlin Machine - A Game Theoretic Bandit Driven Approach to Optimal Pattern Recognition with Propositional Logic}",
+  journal={arXiv preprint arXiv:1804.01508},
+  year={2018}
+}
+```
 
 ## Licence
 Copyright (c) 2019 Geir Thore Berge and Ole-Christoffer Granmo
