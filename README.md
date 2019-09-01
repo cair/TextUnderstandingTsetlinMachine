@@ -48,9 +48,8 @@ The most important parameters of the Tsetlin Machine that we adjust are features
 
 ## Further Work
 
-* Implement fast bit-manipulation approach from (https://github.com/cair/fast-tsetlin-machine-with-mnist-demo).
 * Optimize code base further.
-* Develop a convolutional version of the Tsetlin Machine to further increase accuracy performance.
+* Leverage the Convolutional Tsetlin Machine to further increase accuracy performance.
 
 ## Citation
 Please cite the relevant Tsetlin Machine papers if you use the Tsetlin Machine in your work:
