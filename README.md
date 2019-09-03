@@ -58,7 +58,7 @@ Please cite the relevant Tsetlin Machine papers if you use the Tsetlin Machine i
 @article{berge2019, 
   author={Geir Thore {Berge} and Ole-Christoffer {Granmo} and Tor Oddbjørn {Tveit} and Morten {Goodwin} and Lei {Jiao} and Bernt Viggo {Matheussen}}, 
   journal={IEEE Access}, 
-  title={Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications},
+  title="{Using the Tsetlin Machine to Learn Human-Interpretable Rules for High-Accuracy Text Categorization with Medical Applications}",
   volume={7},
   pages={115134-115146}, 
   year={2019}, 
